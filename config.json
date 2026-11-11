@@ -1,0 +1,91 @@
+{
+  "bot_token": "PASTE_YOUR_BOT_TOKEN_FROM_BOTFATHER",
+  "admin_chat_id": 0,
+
+  "product": {
+    "name": "SmartZonesEA",
+    "tagline": "a robot that trades Gold (XAUUSD) for you on MetaTrader 5",
+    "description": "It watches Gold all day, spots the swing highs and lows where price often turns, and opens buy or sell trades from those areas. If the market suddenly changes direction, it closes the trade early to protect you.",
+    "features": [
+      "Trades Gold (XAUUSD) on the 5-minute chart",
+      "Takes both buy and sell trades",
+      "Closes trades early when the market turns",
+      "You choose how much to risk per trade",
+      "Runs by itself on MT5 or a VPS, 24/5"
+    ],
+    "platform": "MetaTrader 5 (MT5)",
+    "min_balance": "$200",
+    "results_url": "https://www.myfxbook.com/  (replace with your verified results link)"
+  },
+
+  "plans": [
+    { "id": "monthly",  "label": "1 Month",  "price": "$49",  "accounts": 1 },
+    { "id": "quarter",  "label": "3 Months", "price": "$119", "accounts": 1 },
+    { "id": "lifetime", "label": "Lifetime", "price": "$299", "accounts": 2 }
+  ],
+
+  "payment_instructions": "🏦 <b>Bank transfer (NGN)</b>\nBank: YOUR BANK\nAccount name: YOUR NAME\nAccount number: 0000000000\n\n💵 <b>USDT (TRC20)</b>\nYOUR_WALLET_ADDRESS",
+
+  "payment_reminder_hours": 3,
+
+  "setup_guide": "1. In MT5, click File → Open Data Folder → MQL5 → Experts, and put the file there\n2. Close and reopen MT5\n3. Open a Gold (XAUUSD) chart on M5 and drag the EA onto it\n4. Tick 'Allow Algo Trading' and switch on the Algo Trading button at the top\n5. Try it on a demo account first, with low risk",
+
+  "smart_replies": [
+    {
+      "keywords": ["price", "cost", "how much", "pricing", "fee", "amount", "charge"],
+      "answer": "Here are the prices 👇\n\n{price_list}\n\nThe Lifetime plan is the best value if you plan to use it long-term."
+    },
+    {
+      "keywords": ["result", "proof", "profit", "performance", "win rate", "winrate", "track record", "myfxbook", "does it work", "is it good"],
+      "answer": "Good question - you should always see proof before buying 👍\n\nHere are the live results:\n{results_url}\n\nJust so you know: past results don't guarantee future profits. Every trading bot has losing days."
+    },
+    {
+      "keywords": ["how does it work", "how it work", "strategy", "what does it do", "explain", "what is it", "about"],
+      "answer": "Simple version: {description}\n\nYou just install it, choose your risk, and it trades for you."
+    },
+    {
+      "keywords": ["guarantee", "safe", "risk", "lose", "loss", "scam", "legit"],
+      "answer": "I'll be honest with you 🙏 No robot can guarantee profit. Trading Gold is risky and you can lose money.\n\nThat's why we show live results, and why we recommend you start on a demo account with low risk."
+    },
+    {
+      "keywords": ["broker", "exness", "xm", "icmarkets", "ic markets", "deriv", "hfm"],
+      "answer": "You can use any broker that has MetaTrader 5 and Gold (XAUUSD). A low-spread account works best."
+    },
+    {
+      "keywords": ["minimum", "balance", "capital", "start with", "deposit"],
+      "answer": "We recommend at least {min_balance}. You can start smaller if you lower the risk setting, but take it slow."
+    },
+    {
+      "keywords": ["mt4", "metatrader 4"],
+      "answer": "Right now it works on MetaTrader 5 (MT5) only. MT5 is free to download from your broker."
+    },
+    {
+      "keywords": ["vps", "laptop", "phone", "mobile", "computer off", "24"],
+      "answer": "The EA runs inside MT5 on a computer. It only trades while MT5 is open, so most people use a cheap VPS (a computer in the cloud) so it runs 24/5. It won't run on the MT5 phone app."
+    },
+    {
+      "keywords": ["install", "setup", "set up", "how to use"],
+      "answer": "Setting it up takes about 5 minutes:\n\n{setup_guide}\n\nAfter you buy, I'll send you the file along with these steps."
+    },
+    {
+      "keywords": ["demo", "trial", "test", "free"],
+      "answer": "You can check the live results first: {results_url}\n\nAfter you buy, we strongly recommend running it on a demo account before using real money."
+    },
+    {
+      "keywords": ["refund", "money back"],
+      "answer": "Because the EA is a digital file, we don't usually offer refunds once it's delivered. If you have a problem, tap 💬 Talk to us and we'll sort it out."
+    },
+    {
+      "keywords": ["pay", "payment", "bank", "usdt", "crypto", "transfer"],
+      "answer": "You can pay by bank transfer (NGN) or USDT. Tap 🛒 Buy and I'll take you through it step by step."
+    },
+    {
+      "keywords": ["change account", "new account", "another account", "switch account"],
+      "answer": "No problem. Tap 💬 Talk to us and send your Order ID and your new MT5 account number."
+    }
+  ],
+
+  "support_username": "@YourSupportUsername",
+
+  "disclaimer": "⚠️ Trading Gold and forex is risky and you can lose money. Past results don't guarantee future profits."
+}

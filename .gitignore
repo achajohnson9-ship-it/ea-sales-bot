@@ -1,0 +1,11 @@
+# Buyer data, orders and licences - never upload
+data.json
+data.json.tmp
+
+# Your EA files - never upload
+*.ex5
+*.mq5
+
+# Python cache
+__pycache__/
+*.pyc
